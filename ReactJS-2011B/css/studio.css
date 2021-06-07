@@ -1,0 +1,232 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+}
+
+:root {
+    --bg: #ffffff;
+    --title: #161616;;
+    --text: #6b6b6b;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 124.6rem;
+    margin: 0 auto;
+}
+
+/* header */
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 5.5rem;
+}
+
+.header__logo-name {
+    font-size: 2.286rem;
+    font-weight: 700;
+}
+
+.header__menu {
+    font-size: 1.778rem;
+    font-weight: 700;
+}
+
+.image-header, .main__header {
+    width: 124.8rem;
+    height: 57.3rem;
+    padding: 0 3.9rem;
+}
+
+.slider {
+    width: 7.1rem;
+    height: 1.5rem;
+    margin: 2.2rem 0 0 58.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__center {
+    background-color: #d5d5d5;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.7rem;
+}
+
+.slider__center:last-child {
+    background-color: #161616;
+}
+/* ./header */
+
+/* main */
+
+.main__header {
+    margin-top: 10.7rem;
+    display: flex;
+    height: 38.4rem;
+}
+
+.project__title {
+    padding-left: 0.15rem;
+    font-size: 3.302rem;
+    font-weight: 700;
+}
+
+.project__title-content {
+    font-size: 1.651rem;
+    font-weight: 300;
+    display: block;
+    margin: 9.4rem 8.9rem 0 10.9rem;
+    padding-right: 5rem;
+    line-height: 1.4;    
+}
+
+.main__header-image-sea {
+    width: 55.6rem;
+    height: 38.4rem;
+    padding-right: 1.5rem;
+}
+
+.main__date {   
+    display: flex;
+    width: 117rem;
+    margin: 13.8rem 0 0 4rem;
+}
+
+.main__date-project, .main__date-challenge {
+    width: 50%;
+}
+
+.project__date-title {
+    padding-left: 0.05rem;
+    font-size: 3.324rem;
+    font-weight: 700;
+}
+
+.project__year {
+    font-size: 1.651rem;
+    margin: 4.5rem 0 0 1.5rem;
+    font-weight: 300;
+}
+
+.main__date-challenge {
+    margin-left: 1.3rem;
+}
+
+.project__challenge-title {
+    font-size: 3.324rem;
+    font-weight: 700;
+    padding-left: 0.6rem;
+}
+
+.challenge__content {
+    font-size: 1.651rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 4.4rem 0 0 2.1rem;
+    padding-right: 8rem;
+}
+
+.main__image {
+    width: 114rem;
+    display: flex;
+    margin: 12.5rem 0 0 5.4rem;
+    justify-content: space-between;
+}
+
+.main__image-sea {
+    height: 27.9rem;
+    width: 36.8rem;
+}
+
+.main__banner-image {
+    width: 114rem;
+    margin: 12.5rem 0 0 5.4rem;
+}
+
+.banner-head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner-head-image {
+    width: 55.4rem;
+    height: 43.5rem;
+}
+
+.one {
+    margin-left: -1.6rem;
+}
+
+.two {
+    margin-right: -1.4rem;
+}
+
+.main-image {
+    width: 100%;
+    margin-top: 3.1rem;
+}
+
+.main__button {
+    margin: 9.6rem 52.6rem 0;
+    font-size: 1.524rem;
+    font-weight: 400;
+}
+
+.main__button-btn {
+    border: 1px solid #161616;
+    padding: 1.5rem 2rem 1.5rem 1.9rem;
+    background-color: var(--bg);
+}
+
+.footer {
+    font-size: 1.524rem;
+    width: 114rem;
+    margin-top: 11.4rem;
+}
+
+.footer__content {
+    display: flex;
+    width: 81.6rem;
+    justify-content: space-between;
+    margin-left: 11.5rem;
+}
+
+.footer__gmail-connect {
+    font-weight: 700;
+}
+
+ul {
+    line-height: 2.1rem;
+}
+li {
+    font-weight: 300;  
+}
+
+
+
+/* ./main */

@@ -1,0 +1,144 @@
+/* comment CSS */
+/* selector basic */
+/* html selector */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: red;
+}
+/* class selector */
+
+.title {
+    color: green;
+}
+
+#title {
+    color: lightblue;
+}
+
+input[type='text'] {
+    border: 2px solid red;
+}
+
+input[class~='email'] {
+    border: 2px solid blue;
+}
+
+input[class*='us'] {
+    border: 2px solid yellow;
+}
+
+/* a[href$='.vn'] {
+    color: pink;
+}
+
+a[href^='http'] {
+    color: black;
+}
+
+a[class^='in'] {
+    color: red;
+} */
+
+p[class|='title'] {
+    color: chartreuse;
+}
+
+.header > .header__logo {
+    width: 100px;
+    height: 50px;
+    background-color: darkgray;
+}
+
+.header .header__title {
+    color: whitesmoke;
+}
+
+.parent > .box .box-child + .box-child-2 > div.content > h1.title + p.title {
+    color: indigo;
+}
+
+div.pesudo :first-child {
+    color: red;
+}
+
+div.pesudo :first-of-type {
+    color: blue;
+}
+
+div.pesudo :last-child {
+    color: green;
+}
+
+div.pesudo :last-of-type {
+    color: yellow;
+}
+
+div.pesudo :nth-child(4) {
+    color: pink;
+}
+
+div.pesudo :nth-of-type(4) {
+    color: coral
+}
+
+div.pesudo :nth-last-child(2) {
+    color: rgb(0, 255, 255);
+}
+
+div.pesudo :nth-last-of-type(3) {
+    color: rgb(128, 255, 0);
+}
+
+div.only-child :only-child {
+    color: lightgreen;
+}
+
+input[name='username']:forcus {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+
+}
+
+input[name='checkbox']:checked {
+    width: 100px;
+    height: 30px;
+}
+
+div.link a:visited {
+    color: darkorange;
+}
+
+div.link a:active {
+    color: floralwhite;
+}
+
+div.link a:link {
+    color: green;
+}
+
+div.link a:hover {
+    text-decoration: none;
+    background-color: hotpink;
+}
+
+div.pesudo-element p::first-letter {
+    font-size: 50px;
+    color: indigo;
+}
+
+div.pesudo-element p::first-line {
+    color: lawngreen;
+}
+
+div.pesudo-element p::after {
+    content: url('../image/icon.png');
+}
+
+div.pesudo-element p::selection {
+    color: lightblue;
+}

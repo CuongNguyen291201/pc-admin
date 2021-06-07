@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #aad862;
+    --hover-color: #78b43d;
+    --text-color: black;
+    --text-hover: white;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 20rem;
+    background-color: var(--primary-color);
+    margin: 5px 0px 0px 10px;
+    /* padding-left: .5rem; */
+}
+
+.nav__item {
+    padding: 1rem 0 1rem .5rem;
+    border-bottom: thin solid var(--text-color);
+    position: relative;
+}
+
+.nav__item:last-child {
+    border: none;
+}
+
+.nav__link {
+    color: var(--text-color);
+}
+
+.nav__item:hover > .nav__link {
+    color: var(--text-hover);
+    cursor: pointer;
+}
+
+.nav__item:hover {
+    background-color: var(--hover-color);
+}
+
+/* css menu dropdown */
+.nav__dropdown {
+    display: none;
+    width: 20rem;
+    background-color: var(--hover-color);
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+
+
+
+

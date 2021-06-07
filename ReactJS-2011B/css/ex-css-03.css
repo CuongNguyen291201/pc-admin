@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #323031;
+    --bg-hover: #292929;
+    --text-color: white;
+    --text-hover: #DACB46;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    line-height: 4.2rem;
+    background-color: var(--bg-color);
+    border-top: .3rem solid var(--text-hover);
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav_item {
+    line-height: 4.2rem;
+    position: relative;
+    padding: 0 1.5rem;
+}
+
+.nav_link {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.nav_item:hover {
+    background-color: var(--bg-hover);
+}
+
+.nav_item:hover .nav_link {
+    color: var(--text-hover);
+}
+
+.nav_table {
+    display: none;
+    min-width: 60rem;
+    position: absolute;
+    background-color: var(--bg-color);
+    top: 100%;
+    left: 0;
+}
+
+.nav_table > .table_list > .nav_item {
+    width: 40rem;
+}
+
+.nav_table > .table_list > .nav_item > .nav_link {
+    color: var(--text-color);
+}
+
+.nav_item:hover > .nav_table {
+    display: block;
+}
+
+.nav_table > .table_list {
+    display: table-row;
+}
+
+.table_list > .nav_item {
+    display: table-cell;
+}

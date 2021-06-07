@@ -1,0 +1,27 @@
+/*
+Nguyen Quoc Cuong
+B19DCCN085
+15 
+06
+D19CQCN01-B
+Cuong Nguyen
+cuongnguyenz2912@gmail.com
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(){
+	int p,m; scanf("%d%d",&p,&m);
+	int a[p];
+	for(int i=0;i<p;i++){
+		a[i]=rand() % (m+1);
+		}
+	FILE *frt;
+	frt = fopen("C:\\CuongNguyen\\Desktop\\thcs2","w");
+	for(int i=0;i<p;i++){
+		fprintf(frt,"%d",a[i]);
+		}
+	fclose(frt);
+	}
+	
+	
